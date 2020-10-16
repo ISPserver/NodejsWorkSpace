@@ -51,3 +51,11 @@ insert into animal(name, category_id) values('독수리',4);
 insert into animal(name, category_id) values('부엉이',4);
 insert into animal(name, category_id) values('참새',4);
 insert into animal(name, category_id) values('오리',4);
+
+create table notice(
+    notice_id int primary key auto_increment,
+    title varchar(200),
+    writer varchar(20),
+    content text,
+    regdate timestamp default now(),
+    hit int default 0);
